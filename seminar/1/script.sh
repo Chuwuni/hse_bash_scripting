@@ -1,8 +1,6 @@
 #!/bin/bash 
-echo "Введите своё имя:"
-read name
-echo "Введите свой возраст:"
-read age
+read -p "Введите своё имя: " name
+read -p "Введите свой возраст: " age
 if [ "$age" -lt "0" ]; then
     echo "Поговорим поcле рождения (Программа 0+)"
 else

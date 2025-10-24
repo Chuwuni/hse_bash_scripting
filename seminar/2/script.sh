@@ -1,6 +1,5 @@
 #!/bin/bash
-echo "Введите имя файла для поиска"
-read name
+read -p "Введите имя файла для поиска: " name
 if [[ -f "$name" ]]; then
     echo "Файл $name - Существует"
 else
